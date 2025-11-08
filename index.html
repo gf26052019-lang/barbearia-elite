@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbearia Elite</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Fallback enquanto carrega */
+      body { margin: 0; font-family: system-ui, sans-serif; }
+      #root { min-height: 100vh; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
+    <div id="root">
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background: #1f2937; color: white;">
+        Carregando Barbearia Elite...
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
